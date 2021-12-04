@@ -2,7 +2,7 @@ const iphoneColors = document.getElementById('colors');
 const iphoneCapacity = document.getElementById('capacity');
 const iphoneQuantity = document.getElementById('quantity');
 
-const resultado = document.getElementById('result');
+const result = document.getElementById('result');
 const colorChange = document.getElementById("iphone");
 
 const prices = {
@@ -42,11 +42,11 @@ function validate(){
         quantityValue < 1 || 
         quantityValue > 10)
     {
-        resultado.style.display = "block";
-        resultado.style.color = "white";
-        resultado.style.backgroundColor = "#a84432";
-        resultado.style.borderColor = "#a84432";
-        resultado.innerHTML = "Error: ingresar valores válidos"
+        result.style.display = "block";
+        result.style.color = "white";
+        result.style.backgroundColor = "#a84432";
+        result.style.borderColor = "#a84432";
+        result.innerHTML = "Error: ingresar valores válidos"
         return false;
     }
     return true;
@@ -70,12 +70,12 @@ function calculatePrice(){
                 break;
         }   
 
-        resultado.style.display = "block";
-        resultado.style.color = "white";
-        resultado.style.borderColor = "#68b54e";
-        resultado.style.backgroundColor = "#68b54e";
+        result.style.display = "block";
+        result.style.color = "white";
+        result.style.borderColor = "#68b54e";
+        result.style.backgroundColor = "#68b54e";
 
-        return resultado.innerHTML = "Cotización:  $" + total;
+        return result.innerHTML = "Cotización:  $" + total;
     }
 
 } 
